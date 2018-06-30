@@ -4,69 +4,45 @@
     <title>Guessing Game</title>
 
     <!-- Bootstrap and CSS here-->
-    <!--style>
-      .center {
-        text-align: center;
-      }
-      ul {
-          list-style: none;
-          padding: 0;
-      }
-      img {
-          display: inline;
-          width: 200px;
-          height: 100px;
-      }
-      #footer {
-          width: 100%;
-          border-top: solid 2px black;
-          background-color: white;
-          position: fixed;
-          bottom: 0;
-      }
-    </style-->
+
     <link rel="stylesheet" href="stylesheets/main.css">
   </head>
   <body>
+    <div id="app" class="center">
 
-      <div id='app'>
-
-        <div id='headers'>
-          <!-- Title and subtitles! -->
-          <h1>Guessing Game!</h1>
-          <h2>Guess a number between 1-100</h2>
-        </div>
-
-        <div id='main'>
-          <div id='input-parent'>
-            <!-- Player's guess input, and submit button -->
-            <input maxlength="2" placeholder="Input guess here" autofocus="autofocus">
-            <button type="submit">Submit</button>
-          </div>
-
-          <div id='guesses'>
-            <!-- unordered list of guesses -->
-            <ul>
-              <li>guess1</li>
-              <li>guess2</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-            </ul>
-
-          </div>
-
-          <div id="menu-btns">
-            <!-- reset and hint buttons -->
-            <button>reset</button>
-            <button>hint</button>
-          </div>
-        </div>
+      <div id="headers">
+        <!-- Title and subtitles! -->
+        <h1>Guessing Game!</h1>
+        <h2>Guess a number between 1-100</h2>
       </div>
 
+      <div id="main">
+        <div id="input-parent">
+          <!-- Player's guess input, and submit button -->
+          <input id="player-input" class="center" maxlength="3" placeholder="#" autofocus="autofocus">
+          <button id="submit" type="submit">Submit</button>
+        </div>
 
+        <div id="guesses" class="guess">
+          <!-- unordered list of guesses -->
+          <ul>
+            <li>guess1</li>
+            <li>guess2</li>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+          </ul>
+        </div>
 
-    <div id='footer'>
+        <div id="menu-btns">
+          <!-- reset and hint buttons -->
+          <button>reset</button>
+          <button>hint</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="center">
         <div>
           <div class=''>
             <img src='fa-logo@2x.png'></img>
@@ -79,7 +55,6 @@
           <div class=''>
             <img src='grace_hopper_academy.png'></img>
           </div>
-
 
         </div>
     </div>
