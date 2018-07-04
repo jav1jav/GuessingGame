@@ -4,13 +4,12 @@
     <title>Guessing Game</title>
 
     <!-- Bootstrap and CSS here-->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
     
   </head>
   <body>
     <div id="app" class="center container">
-
       <div id="headers">
         <!-- Title and subtitles! -->
         <h1 id="title">Guessing Game!</h1>
@@ -20,8 +19,8 @@
       <div id="main">
         <div id="parent-input">
           <!-- Player's guess input, and submit button -->
-          <input id="player-input" class="center" maxlength="3" placeholder="#" autofocus="autofocus">
-          <button id="submit" type="submit">Submit</button>
+          <input id="player-input" class="center" maxlength="3" placeholder="#" autofocus="autofocus"><br>
+          <button id="submit" class="btn btn-outline-secondary" type="submit">Submit</button>
         </div>
 
         <div id="guesses" class="guess">
@@ -37,24 +36,24 @@
 
         <div id="menu-btns">
           <!-- reset and hint buttons -->
-          <button class='btn' id="reset">Reset</button>
-          <button id="hint">Hint</button>
+          <button id="reset" class="btn btn-outline-secondary" >Reset</button>
+          <button id="hint" class="btn btn-outline-secondary" >Hint</button>
         </div>
       </div>
     </div>
 
-    <div id="footer" class="center container">
+    <div id="footer" class="center">
       <div class="row">
-        <div class='col-sm-5'>
-          <img class='img-responsive' src='fa-logo@2x.png'></img>
+        <div class='col'>
+          <img src='fa-logo@2x.png'></img>
         </div>
 
-        <div class='col-sm-2'>
-          <h4>Project by Javier Carey</h4>
+        <div class='col-2'>
+          <h4>Project by<br>Javier Carey</h4>
         </div>
 
-        <div class='col-sm-5'>
-          <img class='img-responsive' src='grace_hopper_academy.png'></img>
+        <div class='col'>
+          <img src='grace_hopper_academy.png'></img>
         </div>
       </div>
     </div>
