@@ -31,12 +31,26 @@ img {
     
   }
     #parent-input {
-      /*width: 160px;*/
+      width: 160px;
+      height: 160px; 
       margin: 0 auto;
-      padding: 2em
+      position: relative;
     }
       #player-input {
-        margin-bottom: 1em; 
+        width: 160px;  
+        height: 160px;
+        font-size: 75px;
+        border-radius: 100%;
+      }
+      #submit {
+        
+        border-radius: 100%;
+        background-color: rgba(44, 209, 29, 0.815)
+        width: 50px;
+        height: 50px;  
+        position: absolute;
+        top: 110px;
+        left: 110px; 
       }
 
     #guesses {
