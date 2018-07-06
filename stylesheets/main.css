@@ -1,6 +1,6 @@
 body {
   background-image: url("../images/bg.png");
-  background-size: 50%;
+  background-size: 75%;
   background-repeat: repeat;
 }
 
@@ -8,8 +8,13 @@ div {
   
 }
 .mute-bg-img {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
 }
+
+.suppress-focus-halo {
+  outline: none;
+}
+
 .center {
   text-align: center;
 }
@@ -23,17 +28,19 @@ img {
     
   }
     h1, h2 {
-      margin: 1px auto; 
-      padding: .5em; 
+      /*border: dashed grey;*/
+      margin: 20px auto; 
+      padding: 0px; 
     }
 
   #main {
     
   }
     #parent-input {
+      /* border: dashed grey; */
       width: 160px;
       height: 160px; 
-      margin: 0 auto;
+      margin: 45px auto;
       position: relative;
     }
       #player-input {
@@ -41,11 +48,11 @@ img {
         height: 160px;
         font-size: 75px;
         border-radius: 100%;
+        border: double #32cea7;
+        background-color: rgba(255, 255, 255, 0.8);
       }
       #submit {
-        
         border-radius: 100%;
-        background-color: rgba(44, 209, 29, 0.815)
         width: 50px;
         height: 50px;  
         position: absolute;
@@ -57,25 +64,32 @@ img {
       
     }
       #guess-list {
+        /* border: dashed grey; */
         display: inline-flex;
         /*margin: 0;*/
         list-style: none;
         padding: 1em;
       }
         li {
-          background-color: rgba(255, 255, 255, 0.7);
+          background-color: rgba(255, 255, 255, 0.8);
           margin: 4px; 
-          padding: 1px;
           width: 50px;
           height: 50px;
-          border: thin solid #32cea7;
-          border-radius: 10px; 
+          border: double #32cea7;
+          border-radius: 5px; 
           font-size: 30px; 
         }
 
     #menu-btns {
-      padding: 2em; 
+      /* border: dashed grey; */
+      padding: 0; 
     }
+      #reset {
+        width: 70px; 
+      }
+      #hint {
+        width: 70px; 
+      }
 
   #footer {
     width: 100%;
